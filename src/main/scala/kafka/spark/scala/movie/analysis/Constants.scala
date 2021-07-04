@@ -1,3 +1,5 @@
+package kafka.spark.scala.movie.analysis
+
 import org.apache.spark.sql.types.{ArrayType, IntegerType, LongType, StringType, StructField, StructType}
 
 object Constants {

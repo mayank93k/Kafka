@@ -1,4 +1,6 @@
-import Constants.{PROPERTIES_CONFIG, PROPERTIES_CONF_FILE}
+package kafka.spark.scala.movie.analysis
+
+import kafka.spark.scala.movie.analysis.Constants.{PROPERTIES_CONFIG, PROPERTIES_CONF_FILE}
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import Constants._

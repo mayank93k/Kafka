@@ -1,3 +1,5 @@
+package kafka.spark.scala.movie.analysis
+
 import java.util.Properties
 
 import org.apache.kafka.clients.consumer.ConsumerConfig

@@ -1,4 +1,4 @@
-package org.org.spark.scala.mba.usecase
+package kafka.spark.scala
 
   import java.io.File
   import java.util.Properties
