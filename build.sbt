@@ -1,4 +1,4 @@
-name := "Project_Kafka_Scala"
+name := "Kafka"
 
 version := "0.1"
 
