@@ -1,15 +1,15 @@
 package kafka.spark.scala.movie.analysis
 
-import java.util.Properties
-
-import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.clients.producer.ProducerConfig
 import org.apache.kafka.common.serialization.StringDeserializer
+
+import java.io
+import java.util.Properties
 
 object KafkaProperties {
 
   // Setting Kafka Producer properties
-  def getProducerProperties() : Properties ={
+  def getProducerProperties: Properties = {
     val props = new Properties()
     props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer")
@@ -19,8 +19,9 @@ object KafkaProperties {
 
     props
   }
+
   // Setting Kafka Consumer properties
-  def getConsumerProperties() = {
+  def getConsumerProperties: Map[String, io.Serializable] = {
     val kafkaParams = Map("bootstrap.servers" -> "localhost:9092",
       "key.deserializer" -> classOf[StringDeserializer],
       "value.deserializer" -> classOf[StringDeserializer],
