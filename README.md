@@ -1,2 +1,2 @@
-# Projrct_Kafka_Scala
+# Kafka
 Kafka project using spark and scala
