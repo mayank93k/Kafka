@@ -1,4 +1,4 @@
-name := "Kafka"
+name := "Kafka Integration Project"
 
 version := "0.1"
 
